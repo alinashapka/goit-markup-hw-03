@@ -35,10 +35,13 @@ body {
   padding: 0 15px;
 }
 
+.main-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .nav {
@@ -93,6 +96,7 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -131,6 +135,7 @@ address {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 188px 0;
 }
 
 .hero {
@@ -156,6 +161,7 @@ address {
   letter-spacing: 0.04em;
   color: #fff;
   background: #4d5ae5;
+  cursor: pointer;
   display: block;
   border: none;
   border-radius: 4px;
@@ -194,7 +200,10 @@ address {
 
 .principles-list {
   display: flex;
-  gap: 8px;
+  gap: 24px;
+}
+
+.principles-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
@@ -210,6 +219,16 @@ address {
   color: #2e2f42;
 }
 
+.team .subtitle,
+.portfolio .subtitle {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team .text {
+  text-align: center;
+}
+
 .team .title,
 .portfolio .title {
   margin-bottom: 72px;
@@ -223,7 +242,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 24px;
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
@@ -233,18 +252,19 @@ address {
   justify-content: center;
   flex-direction: column;
   gap: 8px;
-  margin-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 
 .team-item {
   background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
   flex-basis: calc((100% - 5 * 24px) / 6);
 }
 
@@ -254,12 +274,13 @@ address {
   justify-content: center;
   flex-direction: column;
   gap: 8px;
-  margin-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -276,8 +297,8 @@ address {
   justify-content: flex-start;
   flex-direction: row;
   gap: 0px;
-  padding-top: 100px;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .footer-logo-accent {
@@ -287,5 +308,4 @@ address {
 .footer-text {
   color: #f4f4fd;
   max-width: 264px;
-  padding-bottom: 100px;
 }
